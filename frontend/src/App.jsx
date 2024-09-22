@@ -24,7 +24,7 @@ function App() {
 
     try {
       const parsedInput = JSON.parse(jsonInput);
-      const res = await axios.post('https://bajaj2-0b9h.onrender.com', { data: parsedInput.data });
+      const res = await axios.post('https://bajaj2-0b9h.onrender.com/bfhl', { data: parsedInput.data });
       console.log(res.data);
       setResponse(res.data);
     } catch (error) {
